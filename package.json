@@ -1,0 +1,53 @@
+{
+  "name": "stratfs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
+    "start-dev": "npm run build & npm run start-server",
+    "start": "npm run start-dev",
+    "seed": "node seed.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.12.5",
+    "@react-three/drei": "^4.0.1",
+    "@react-three/fiber": "^6.0.1",
+    "axios": "^0.21.1",
+    "compression": "^1.7.4",
+    "connect-session-sequelize": "^7.1.1",
+    "core-js": "^3.8.3",
+    "dotenv": "^8.2.0",
+    "drei": "^2.2.21",
+    "express": "^4.16.2",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-three-gui": "^0.4.2",
+    "regenerator-runtime": "^0.13.7",
+    "sequelize": "^6.4.0",
+    "three": "^0.127.0",
+    "three-spritetext": "^1.6.1",
+    "three.js": "^0.77.1",
+    "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.16.4",
+    "webpack-cli": "^4.4.0"
+  }
+}
