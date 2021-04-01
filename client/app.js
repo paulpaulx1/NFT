@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 // UPDATE: there is a problem in chrome with starting audio context
 //  before a user gesture. This fixes it.
 var started = 0;
-window.addEventListener('click', () => {  
+window.addEventListener('pointerdown', () => {  
    started++
   if (started > 2) {
     // handleChord(Math.ceil(Math.random() * 0 - 5));
@@ -84,10 +84,10 @@ orbitControls.autoRotate = true;
 
 let startColor;
 let resized = false;
-window.addEventListener('click', () => {
-  console.log();
-  Tone.start();
-});
+// window.addEventListener('click', () => {
+//   console.log();
+//   Tone.start();
+// });
 // resize event listener
 window.addEventListener('resize', function () {
   resize();
@@ -174,6 +174,7 @@ function dragStartCallback(event) {
   event.object.material.color.setHex(0x000000);
   event.object.rotation.y += 3
   // event.object.position.z += 4;
+  
 }
 
 function dragendCallback(event) {
