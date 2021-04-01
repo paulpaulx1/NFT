@@ -37,7 +37,17 @@
     "three": "^0.127.0",
     "three-spritetext": "^1.6.1",
     "three.js": "^0.77.1",
-    "tone": "^14.7.77"
+    "tone": "^14.7.77",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.16.4",
+    "webpack-cli": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
